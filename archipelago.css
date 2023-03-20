@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Robotoital,wght@0,400;0,700;0,900;1,300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Syne:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap');
+
 /* Page Level */
 body {
+    background-image: url("https://assets.api.uizard.io/api/cdn/stream/9150b32c-cf28-4c4d-87f5-79f3746a783a.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
@@ -27,19 +34,25 @@ body {
 }
 
 /* Section level */
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e5e7eb;
+    padding-top: 16px;
+}
+
 .section {
     display: flex;
     justify-content: center;
     min-height: 400px;
 }
 
-.s1,
-footer {
-    background-color: #1f2937;
-}
-
 .s1 {
     color: #e5e7eb;
+    margin-top: 100px;
 }
 
 .s3 {
@@ -50,22 +63,19 @@ footer {
 
 
 /* Interior s1 */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #e5e7eb;
-    padding-top: 16px;
-}
-
 .logo {
-    font-weight: bold;
-    font-size: 24px;
+    font-family: Syne;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 46px;
+    color: #FEFEFE;
+    opacity: 0.8;
+    padding-left: 3em;
 }
 
 ul {
     margin: 0;
-    padding: 0;
+    padding: 0 3em 0 0;
     list-style: none;
     display: flex;
     gap: 16px;
@@ -78,37 +88,36 @@ a {
 
 .hero-card{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 100px 0;
+    margin: 50px 0 100px;
+    /* flex-wrap: wrap; */
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
-    max-width: 410px;
+    min-width: 516px;
     gap: 5px;
     align-items: flex-start;
+    padding-top: 50px;
 }
 
 .hero-main {
-    color: #f9faf8;
-    font-size: 48px;
+    color: #b9b26a;
+    font-size: 75px;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 .hero-secondary {
     margin-bottom: 8px;
+    font-size: 24px;
+    width: 380px;
 }
 
-.image-placeholder {
-    height: 100%;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: grey;
-    border-radius: 5px;
+img.sweet-escape {
+    width: 900px;
+    border-radius: 315px;
+    border: 10px solid grey;
 }
 
 /* Interior s2 */
@@ -207,4 +216,5 @@ footer {
     align-items: center;
     height: 100px;
     color: #f9faf8;
+    background-color: #000;
 }
