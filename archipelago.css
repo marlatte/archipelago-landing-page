@@ -41,7 +41,11 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #e5e7eb;
-    padding-top: 16px;
+    background-color: #000000c4;
+    padding: 16px 0 8px 0;
+    box-shadow: 0 5px 4px #999a9dc4;
+
+    z-index: 1;
 }
 
 .section {
@@ -52,7 +56,12 @@ header {
 
 .s1 {
     color: #e5e7eb;
-    margin-top: 100px;
+    margin: 100px 0;
+    flex-direction: column;
+}
+
+.s2 {
+    flex-direction: column;
 }
 
 .s3 {
@@ -68,9 +77,8 @@ header {
     font-weight: 800;
     font-size: 35px;
     line-height: 46px;
-    color: #FEFEFE;
-    opacity: 0.8;
-    padding-left: 3em;
+    color: #a5a3a3;
+    padding-left: 1em;
 }
 
 ul {
@@ -88,30 +96,34 @@ a {
 
 .hero-card{
     display: flex;
-    margin: 50px 0 100px;
-    /* flex-wrap: wrap; */
+    overflow: hidden;
+    margin-left: 6em;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
     min-width: 516px;
-    gap: 5px;
+    max-width: 680px;
+    gap: 2em;
     align-items: flex-start;
     padding-top: 50px;
 }
 
 .hero-main {
-    color: #b9b26a;
+    color: #d5ce7f;
     font-size: 75px;
     font-weight: 900;
     text-transform: uppercase;
 }
 
 .hero-secondary {
-    margin-bottom: 8px;
-    font-size: 24px;
-    width: 380px;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-bottom: 4px solid #e5e7eb;
+    font-family: Syne;
+    font-size: 30px;
+    width: 355px;
 }
 
 img.sweet-escape {
@@ -121,42 +133,57 @@ img.sweet-escape {
 }
 
 /* Interior s2 */
-.s2 .width-holder {
-    align-items: center;
+.s2-header {
+    margin: 0 0 50px 6em;
 }
 
-#information-header {
-    font-size: 36px;
-    font-weight: 900;
-    color: #1f2937;
-    margin: 60px;
+.in-my-x {
+    color: #d5ce7f;
+    font-family: Syne;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.in-my-x#catalogue {
+    font-size: 96px;
+    line-height: 80px;
+    letter-spacing: -3px;
+    z-index: 0;
+    /* margin: 60px; */
+
 }
 
 .s2-card-group {
+    align-self: center;
     display: flex;
-    gap: 45px;
+    gap: 70px;
     margin-bottom: 100px;
 }
 
 .s2-card {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     text-align: center;
-    width: 175px;
 }
 
 .rounded-box {
-    border: 4px solid #3882f6;
+    background-color: #ffffffc4;
     box-sizing: border-box;
     border-radius: 10px;
-    width: 175px;
-    height: 175px;
+}
+
+.rounded-box img {
+    padding: 16px;
+    height: 54px;
+    width: 54px;
 }
 
 .s2-subtext {
-    color: grey;
+    color: white;
     margin-top: 8px;
+    font-family: Syne;
 }
 
 /* Interior s3 */
