@@ -175,12 +175,21 @@ header {
             z-index: 0;
         }
 
-        .in-my-x#catalogue-title {
+        .in-my-x#catalogue-title,
+        .in-my-x#kitchen-title {
             font-size: 96px;
             line-height: 80px;
             letter-spacing: -3px;
             z-index: 0;
+            display: flex;
         }
+            .divider-line {
+                border-top: 1px solid #d5ce7f;
+                flex: 1;
+                margin: 0 100px 0 50px;
+                height: 1px;
+                align-self: center;
+            }
 
     .catalogue-card-group {
         align-self: center;
@@ -214,13 +223,7 @@ header {
 
     .kitchen-header {
         margin: 0 0 50px 6em;
-    }
-
-        .in-my-x#kitchen-title {
-            font-size: 96px;
-            line-height: 80px;
-            letter-spacing: -3px;
-            z-index: 0;
+        display: flex;
     }
 
     .kitchen-card-group {
