@@ -70,83 +70,84 @@ header {
     padding-right: 10px;
 }
 
-        .hero .text {
-            display: flex;
-            flex-direction: column;
-            min-width: 500px;
-            max-width: 650px;
-            align-items: flex-start;
-            padding-top: 25px;
-            opacity: 0.9;
+    .hero .text {
+        display: flex;
+        flex-direction: column;
+        min-width: 500px;
+        max-width: 650px;
+        align-items: flex-start;
+        padding-top: 25px;
+        opacity: 0.9;
+        margin-left: auto;
+    }
 
+        .hero .main {
+            color: #d5ce7f;
+            font-size: 70px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: -3px;
         }
 
-            .hero .main {
-                color: #d5ce7f;
-                font-size: 70px;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: -3px;
+        .hero .secondary {
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            border-bottom: 4px solid #e5e7eb;
+            font-family: Syne;
+            font-size: 30px;
+            width: 355px;
+        }
+        
+        .metadata-1 {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            width: 355px;
+        }
+        
+            .tag,
+            .read-time {
+                font-weight: 500;
             }
 
-            .hero .secondary {
-                padding-bottom: 8px;
-                margin-bottom: 16px;
-                border-bottom: 4px solid #e5e7eb;
-                font-family: Syne;
-                font-size: 30px;
-                width: 355px;
-            }
-            
-            .metadata-1 {
-                display: flex;
-                gap: 16px;
-                align-items: center;
-                width: 355px;
-            }
-            
-                .tag,
-                .read-time {
-                    font-weight: 500;
-                }
-
-                .tag {
-                    border: 1px solid white;
-                    border-radius: 32px;
-                    padding: 4px 14px;
-                    font-size: 14px;
-                }
-
-                .read-time {
-                    margin-left: auto;
-                    font-size: 14px;
-                }
-
-            .non-button,
-            .signup {
-                background-color: black;
-                color: white;
-                font-weight: 700;
-                font-size: 16px;
-                padding: 8px 20px;
-                flex: 0 0 auto;
-                border: 1px solid #4f4f4f;
+            .tag {
+                border: 1px solid white;
                 border-radius: 32px;
+                padding: 4px 14px;
+                font-size: 14px;
             }
 
-            .non-button {
-                margin-top: 25px;
+            .read-time {
+                margin-left: auto;
+                font-size: 14px;
             }
 
-            .allcaps {
-                text-transform: uppercase;
-            }
+        .non-button,
+        .signup {
+            background-color: black;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 8px 20px;
+            flex: 0 0 auto;
+            border: 1px solid #4f4f4f;
+            border-radius: 32px;
+        }
 
-            img.sweet-escape {
-                width: 900px;
-                border-radius: 315px;
-                border: 10px solid #4f4f4f;
-            }
+        .non-button {
+            margin-top: 25px;
+        }
+
+        .allcaps {
+            text-transform: uppercase;
+        }
+
+    img.sweet-escape {
+        width: 900px;
+        border-radius: 315px;
+        border: 10px solid #4f4f4f;
+        margin-right: auto;
+    }
 
 
 /* ------------- =Interior articles -------------- */
@@ -310,10 +311,12 @@ header {
                 margin: 0 8px 0 25px;
             }
 
-    .catalogue-card-group {
-        justify-content: space-between;
+    .catalogue .card-group {
         display: flex;
-        padding: 0 8em;
+        gap: 25px;
+        margin: 0 5em;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
         .catalogue-card {
